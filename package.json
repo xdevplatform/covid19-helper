@@ -1,0 +1,17 @@
+{
+  "name": "covid-helper",
+  "version": "1.0.0",
+  "description": "An open source bot framework with helpful resources about COVID-19",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@TwitterDev (https://twitter.com/TwitterDev)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ngrok": "^3.2.7",
+    "twitter-autohook": "^1.6.0",
+    "yamljs": "^0.3.0"
+  }
+}

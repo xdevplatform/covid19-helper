@@ -1,0 +1,17 @@
+start:
+  text: |
+    🇺🇸 Hi! I'm a bot and I'll help you with resources on COVID-19. Please select your country.
+    
+    🇮🇹 Ciao! Sono un robot e posso aiutarti con risorse utili su COVID-19. Per favore, seleziona la tua nazione.
+    
+    🇪🇸 ¡Hola! Soy un robot y puedo ayudar con recursos utiles sobre la COVID-19. Por favor, selecciona tu nación.
+  options:
+    - label: 🇺🇸 United States
+      description: Contains resources from CDC
+      metadata: scripts/en-us/for-me.yaml#start
+    - label: 🇮🇹 Italia
+      description: Usa le linee guida del Ministero della Salute
+      metadata: 'scripts/it-it/for-me.yaml#start'
+    - label: 🇪🇸 España
+      description: Con las lineas guias del MSCBS
+      metadata: 'scripts/es-es/for-me.yaml#start'

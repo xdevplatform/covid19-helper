@@ -1,0 +1,117 @@
+start:
+  text: |
+    Hi! I'm a bot and I'll help you understand what to do next with COVID-19.
+    
+    My recommendations do not constitute medical advice and should not be used to diagnose or treat medical conditions.
+    
+    ✋ Your answers will not be shared with anyone, including Twitter. No data is stored or collected.
+    
+    ✅ By using me, you agree that Twitter and the developer of this app will not be liable for any harm related to your use.
+
+    🛑 Before you start, stop and call 911 if you have any of these symptoms:
+
+    • Constant chest pain or pressure
+    • Extreme difficulty breathing
+    • Severe, constant dizziness or lightheadedness
+    • Slurred speech
+    • Difficulty waking up
+  options:
+    - label: Agree and continue
+      metadata: 'scripts/en-us/for-me.yaml#services'
+services:
+  text: |
+    Check the CDC guidelines to stay healthy.
+
+    You can use CDC's self check tool to make decisions about seeking appropriate medical care.
+
+    If you are looking to help, there are many resources to contribute and donate.
+  options:
+    - label: Protect yourself
+      description: Learn how to protect yourself
+      metadata: 'scripts/en-us/for-me.yaml#protect_yourself'
+    - label: Protect others
+      description: Learn what measures can help others
+      metadata: 'scripts/en-us/for-me.yaml#protect_others'
+    - label: Self-check
+      description: Use CDC's tool to understand next steps
+      metadata: 'scripts/en-us/for-me.yaml#selfcheck'
+    - label: Help others in need
+      description: Learn how to help and donate
+      metadata: 'scripts/en-us/help-others.yaml#start'
+    - label: Back
+      description: Change country
+      metadata: 'scripts/en-us/main.yaml#start'
+selfcheck:
+  text: |
+    You can check use the self check tool on the CDC website:
+
+    https://covid19healthbot.cdc.gov/
+  options:
+    - label: Back
+      metadata: 'scripts/en-us/for-me.yaml#services'
+protect_yourself:
+  text: |
+    There is currently no vaccine to prevent COVID-19 from spreading. The best way to prevent illness is to avoid being exposed to this virus. Here's what you can do to protect yourself:
+
+    Clean your hands often
+    • Wash your hands often with soap and water for at least 20 seconds. If soap is not available, use a hand sanitizer that contains at least 60% alcohol.
+    • Avoid touching your eyes, nose, and mouth with unwashed hands.
+    
+    
+    Avoid close contact
+    • Put distance between yourself and other people if COVID-19 is spreading in your community.
+    • The virus is thought to spread mainly from person-to-person. Maintain a distance of 6 feet or more from other people.
+  options:
+    - label: Wash your hands
+      description: What you need to know about washing hands
+      metadata: 'scripts/en-us/for-me.yaml#wash_hands_videos'
+    - label: Back
+      metadata: 'scripts/en-us/for-me.yaml#services'
+protect_others:
+  text: |
+    The virus is thought to spread mainly from person-to-person. The measures you take for yourself can significantly reduce the risk of spreading COVID-19.
+
+    If you are sick:
+    • Stay home, except to get medical care.
+    • Wear a facemask when you are around other people (e.g., sharing a room or vehicle) and before you enter a healthcare provider’s office.
+  options:
+    - label: More details
+      description: Links to CDC resources
+      metadata: 'scripts/en-us/for-me.yaml#cdc_link_sick'
+    - label: I'm not sick
+      description: Learn to keep others protected
+      metadata: 'scripts/en-us/for-me.yaml#protect_others_not_sick'
+    - label: Back
+      description: Go to the main menu
+      metadata: 'scripts/en-us/for-me.yaml#services'
+protect_others_not_sick:
+  text: |    
+    Even if you are not sick:
+    • You should stay home unless you are an essential worker, or if you cannot stay home.
+    • Cover your mouth and nose when you cough and sneeze. Use a tissue or the inside of your elbow.
+    • Throw used tissues in the trash.
+    • Immediately wash your hands with soap and water for at least 20 seconds.
+    • If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.
+    • You do not need to wear a facemask unless you are caring for someone who is sick (and they are not able to wear a facemask).
+    • Facemasks may be in short supply and they should be saved for caregivers.
+  options:
+    - label: Back
+      description: Go to the main menu
+      metadata: 'scripts/en-us/for-me.yaml#services'
+cdc_link_sick:
+  text: |
+    The CDC website has a webpage to help you understand what to do if you are sick:
+
+    https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html
+  options:
+    - label: Back
+      description: Go to the main menu
+      metadata: 'scripts/en-us/for-me.yaml#services'
+wash_hands_videos:
+  text: |
+    This video answers common questions about washing your hands:
+    https://youtu.be/d914EnpU4Fo
+  options:
+    - label: Back
+      description: Go to the main menu
+      metadata: 'scripts/en-us/for-me.yaml#services'
